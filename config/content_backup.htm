@@ -25,7 +25,12 @@
 <p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
 <p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<p></p><h1>有關本網站</h1>
+<h1>Develop</h1>
+<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
+<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
+<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<p>各分組學員可以就以下常見的網際內容, 以組員分工的方式深入研究特定主題, 然後再將結果納入 CMSiMDE 網站, 網誌, 簡報 與 Blogger 網誌內容.</p>
+<h1>有關本網站</h1>
 <p>這門課程在教導學員如何利用網際環境管理與工程應用相關的內容管理.</p>
 <p>總共使用兩套網際內容管理系統:</p>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a></p>
@@ -39,18 +44,14 @@
 <p>Blog (網誌):<span> </span><a href="https://mde.tw/wcmj2020/blog">https://mde.tw/wcmj2020/blog</a> </p>
 <p>Presentation (簡報):<span> </span><a href="https://mde.tw/wcmj2020/reveal">https://mde.tw/wcmj2020/reveal</a> </p>
 <p></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<p>各分組學員可以就以下常見的網際內容, 以組員分工的方式深入研究特定主題, 然後再將結果納入 CMSiMDE 網站, 網誌, 簡報 與 Blogger 網誌內容.</p>
 <h1>分組</h1>
 <h4>亂數分組:</h4>
 <p><a href="https://mde.tw/wcmj2020/downloads/2020spring_wcmj_1a_list.txt">https://mde.tw/wcmj2020/downloads/2020spring_wcmj_1a_list.txt</a> was taken from <a href="https://osa.nfu.edu.tw/">https://osa.nfu.edu.tw/</a> on Feb. 19, 2020.</p>
 <p>The most updated list: <a href="http://s1.mde.nfu.edu.tw:8000/?semester=1082&amp;courseno=2418">http://s1.mde.nfu.edu.tw:8000/?semester=1082&amp;courseno=2418</a> </p>
 <p>semester: 1082</p>
 <p>courseno: 2418</p>
-<p>Under https protocol use port 7443, for http use port 8000.</p><h2>分組結果</h2>
+<p>Under https protocol use port 7443, for http use port 8000.</p>
+<h2>分組結果</h2>
 <h4>常見的網際內容包含:</h4>
 <p>文字 (網誌與網站文字說明, 簡報文字敘述)</p>
 <p>數學方程式 (<a href="https://www.mathjax.org/">mathjax</a>)</p>
@@ -91,7 +92,8 @@
 <p><span>Commits and remote git.</span></p>
 <h4><span>Github</span></h4>
 <p><span>Login to your gm email account and download<span> </span><a href="https://drive.google.com/file/d/1vnkDLW1cg8hKEMUdjDstvWqiS4R1n3IC/view?usp=sharing">GithubPrimer.pdf</a></span></p>
-<p><span>Login to your gm email account and download<span> </span><a href="https://drive.google.com/file/d/18MiM_d95ustohAqoUfx-gc-2dUE9Av0n/view?usp=sharing">ConflictsGUIToolAdvGit.pdf</a></span></p><h2>倉儲與網站</h2>
+<p><span>Login to your gm email account and download<span> </span><a href="https://drive.google.com/file/d/18MiM_d95ustohAqoUfx-gc-2dUE9Av0n/view?usp=sharing">ConflictsGUIToolAdvGit.pdf</a></span></p>
+<h2>倉儲與網站</h2>
 <ol>
 <li>請重新下載<span> </span><a href="https://drive.google.com/open?id=1xDTDfcHU18ipqZNbOufMkSZqibqNeL2T">wcmj2020_tool.7z</a>, 檔案大小為 435 MB, 解開壓縮後為 1.8 GB (其中包括 Mypaint, Dia 與 OBS 等).</li>
 <li>登入 github.com 建立 Github 倉儲, 直接新增 README.md 檔案.</li>
